@@ -1,0 +1,2 @@
+# pokepedia
+INGLES TENICO
