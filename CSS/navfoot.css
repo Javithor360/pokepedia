@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
+/* *{
+	padding: 0;
+	margin: 0;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar con su animación */
+header{
+	background-color:#34495e ;
+	margin-top: -1%;
+	padding: 0.1%;
+	text-align: center;
+}
+
+nav.nav {
+	margin: 10px auto 0;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+
+nav.nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 20px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	font-family: 'Oswald', sans-serif;
+}
+
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+	width: 100%;
+}
+
+nav a:nth-child(1) {
+	width: 100px;
+}
+
+nav a:nth-child(2) {
+	width: 110px;
+}
+
+nav a:nth-child(3) {
+	width: 100px;
+}
+
+nav .start-about, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 140px;
+	background-color: #1abc9c;
+}
+
+nav .start-home, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 240px;
+	background-color: #e74c3c;
+}
+
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 350px;
+	background-color: #3498db;
+}
+
+
+/* Footer */
+footer{
+    color: white;
+	font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background-color: #34495e ;
+    margin-top: 10px;
+	padding: 7px;
+}
+
+footer h3{
+	margin-left: 4px;
+    text-align: right, justify;
+}
+
+footer h4{
+	margin-left: 10px;
+	margin-top: 0;
+}
+
+footer hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 25%;
+}
+
+footer h4:nth-child(8){
+	margin-left: 2px;
+}
