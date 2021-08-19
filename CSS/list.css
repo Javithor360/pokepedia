@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(../css/Fondos/Fondo.png);
+background-size: cover;
+}
+
+.container .grid {
+    margin: 35px 250px 35px 220px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+}
+
+
+.container .grid aside > span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .grid aside h5 {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.container .grid aside h3 > img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+}
+
+.container .grid aside h5 > img {
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+}
+
+.container .grid aside a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .container .grid aside a:visited {
+    text-decoration: none;
+} */
+
+.container .grid > a > article {
+    background: #fff;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    text-align: center;
+    transition: transform .3s;
+    min-height: 240px;
+    min-width: 250px;
+    max-height: 240px;
+    max-width: 250px;
+    text-decoration: none;
+}
+
+.container .grid > a > article:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+
+.container .grid > a > article > img {
+    height: 200px;
+    width: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container .blogText {
+    padding: 0 20px 20px;
+    display: flex;
+}
+
+.container .blogText h3 {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.container .blogText > h3 > img {
+    height: 16px;
+    width: 16px;
+}
+
+.container .grid > a:link,
+.container .grid > a:visited {
+    text-decoration: none;
+}
+
+@media (max-width: 1366px) {
+    .container .grid > a > article {
+        min-height: 240px;
+        min-width: 220px;
+        max-height: 240px;
+        max-width: 220px;
+    }
+
+    .container .grid > a > article > img {
+        height: 200px;
+        width: 220px;
+    }
+
+    #articles {
+        margin: 100px 310px 0px 310px;
+    }
+
+    .container .grid aside {
+        margin-right: -80px;
+    }
+    
+}
